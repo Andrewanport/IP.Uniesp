@@ -12,11 +12,10 @@ def contar_vogais_consoantes():
     Ccount = 0
 
     for L in F:
-        if L.isalpha():
-            if L in V:
-                Vcount += 1
-            else:
-                Ccount += 1
+        if L in V:
+            Vcount += 1
+        else:
+            Ccount += 1
 
     print(f'Número de vogais: \033[1;32m{Vcount}\033[m')
     print(f'Número de consoantes: \033[1;31m{Ccount}\033[m')
